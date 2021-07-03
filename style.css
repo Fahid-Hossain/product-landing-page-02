@@ -1,0 +1,267 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* /////header >> navbar section/////// */
+
+input[type="email"]{
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+input[type="submit"]{
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: rgb(215, 224, 162);
+    border:none;
+    font-weight: 800;
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(206, 216, 171);
+}
+
+#header-img{
+    width: 90px;
+}
+#nav-bar{
+    display: flex;
+    align-items: center;
+/* border: 2px solid red; */
+position: sticky;
+top: 0;
+background-color:#eee;
+margin-bottom: 15px;
+
+}
+
+#nav-ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 34%;
+    /* border: 2px solid rebeccapurple; */
+    position: absolute;
+    right: 35px;
+    
+}
+
+
+
+.nav-link{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color:black;
+}
+#head{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: rgb(53, 51, 48);
+}
+h1{
+    font-size: 25px;
+    padding-bottom: 15px;
+  
+}
+
+
+/* ///////get started section///////// */
+
+.get-started{
+    text-align: center;
+
+}
+
+#email{
+    padding: 5px;
+    width: 20%;
+}
+
+/* ///////////////main container section////////// */
+
+.main-con{
+    display: flex;
+    align-items: center;
+   /* border: 2px solid red; */
+   width: 70%;
+   margin: auto;
+   margin-top: 30px;
+}
+.main-con img{
+    width: 70px;
+    margin-right: 50px;
+ 
+}
+
+/* ////////////youtube video embed/////////// */
+
+center{
+margin-top:30px;
+}
+
+/* //////////box item///////////// */
+
+.container{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 20px 30px;
+    
+}
+
+.item{
+    border:1px solid black;
+    border-radius: 5px;
+    margin-left: 19px;
+    width: 300px;
+    height: 300px;
+}
+
+.item>ol>li{
+    list-style: none;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.btn{
+background-color:rgb(201, 206, 177);
+padding:9px 23px;
+font-size: 17px;
+border: none;
+margin-top: 20px;
+cursor: pointer;
+
+}
+
+.btn:hover{
+    background-color: rgb(207, 219, 174);
+}
+
+.con-head{
+    background-color: rgb(216, 211, 203);
+    padding: 18px;
+    margin-bottom: 10px;
+}
+
+
+/* /////////footer//////////////// */
+
+footer{
+    background-color: rgb(197, 189, 179);
+    width: 75%;
+    margin: auto;
+    padding: 20px;
+}
+footer>ul{
+    display: flex;
+    justify-content: flex-end;
+}
+footer>ul>li{
+    list-style: none;
+    padding: 0 10px;
+    
+}
+
+footer>ul>li>a{
+    text-decoration: none;
+    font-size: 19px;
+}
+
+footer>span{
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+    font-size: 17px;
+}
+
+/* ////////////media query ///////////// */
+
+@media (max-width:900px) {
+
+    #nav-div{
+        display: contents;
+    }
+
+   #nav-ul{
+       flex-direction: column;
+       align-items: flex-end;
+       margin: 0;
+   }
+
+   #nav-ul>li{
+    padding-top: 4px;
+    padding-bottom: 5px;
+   }
+   #email{
+    width:40%;
+   }
+  
+}
+
+@media (max-width:730px) {
+    .container{
+        flex-direction: column;
+        margin: 30px 10px 30px;
+    }
+    .item{
+        margin-bottom: 15px;
+        width: 70%;
+        height: auto;
+    }
+  
+     #center>iframe{
+      width:400px;
+      height:240px;
+      }
+
+}
+
+@media (max-width:590px) {
+    #nav-bar{
+    flex-direction: column;
+    min-height: 200px;
+    }
+    #nav-ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        right: 0px;;
+    }
+    #nav-div{
+        display: block;
+    }
+    #header-img{
+        width:55px;
+    }
+    #head{
+        font-size: 23px;
+    }
+
+ #center iframe{
+     width:300px;
+     height: 200px;
+     }
+
+ footer>ul>li>a{
+    font-size: 15px;
+    }
+footer>span{
+    font-size:14px;
+    text-align: center;
+    }
+.main-con{
+    flex-direction: column;
+    }
+h1{
+    font-size:21px ;
+    }
+
+}
